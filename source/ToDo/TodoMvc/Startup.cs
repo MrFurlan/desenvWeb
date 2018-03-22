@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TodoMVC.Data;
-using TodoMVC.Models;
-using TodoMVC.Services;
+using TodoMvc.Data;
+using TodoMvc.Models;
+using TodoMvc.Services;
 
 namespace TodoMvc
 {
@@ -36,7 +36,8 @@ namespace TodoMvc
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
-            services.AddSingleton<ITodoItemService, FakeToDoItemService>();
+            //services.AddSingleton<ITodoItemService, TodoItemService>();
+            services.AddTransient<ITodoItemService, TodoItemService>();
 
             services.AddMvc();
         }

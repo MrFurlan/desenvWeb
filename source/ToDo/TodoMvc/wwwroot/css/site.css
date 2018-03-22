@@ -10,15 +10,6 @@
     padding-right: 15px;
 }
 
-div.todo-panel {
-    margin-top: 15px;
-}
-
-table tr.done {
-    text-decoration: line-through;
-    color: #888;
-}
-
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
@@ -41,4 +32,13 @@ table tr.done {
     .carousel-caption {
         display: none;
     }
+}
+
+.todo-panel {
+    margin-top: 15px;
+}
+
+table tr .done {
+    text-decoration: line-through;
+    color: #888;
 }
